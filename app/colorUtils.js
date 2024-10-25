@@ -2,7 +2,7 @@
 const ColorPair = require("./ColorPair");
 const { MajorColorNames, MinorColorNames } = require( "./constants");
 
-export function getColorFromPairNumber(pairNumber) {
+ function getColorFromPairNumber(pairNumber) {
     const minorSize = MajorColorNames.length;
     const majorSize = MinorColorNames.length;
 
@@ -20,7 +20,7 @@ export function getColorFromPairNumber(pairNumber) {
     return pair;
 }
 
-export function getPairNumberFromColor(pair) {
+ function getPairNumberFromColor(pair) {
     let majorIndex = MajorColorNames.indexOf(pair.majorColor);
     let minorIndex = MinorColorNames.indexOf(pair.minorColor);
 
@@ -30,3 +30,6 @@ export function getPairNumberFromColor(pair) {
 
     return majorIndex * MinorColorNames.length + (minorIndex + 1);
 }
+
+module.exports={ getColorFromPairNumber};
+module.exports={getPairNumberFromColor};
