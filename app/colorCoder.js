@@ -1,6 +1,6 @@
 // test.js
-import { getColorFromPairNumber, getPairNumberFromColor } from "./colorUtils";
-import ColorPair from "./ColorPair";
+const { getColorFromPairNumber, getPairNumberFromColor } = require( "./colorUtils");
+const ColorPair = require("./ColorPair");
 
 function test() {
     let pairNumber = 4;
