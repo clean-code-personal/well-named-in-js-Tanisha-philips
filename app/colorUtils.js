@@ -1,8 +1,7 @@
-// colorUtils.js
 const ColorPair = require("./ColorPair");
-const { MajorColorNames, MinorColorNames } = require( "./constants");
+const { MajorColorNames, MinorColorNames } = require("./constants");
 
- function getColorFromPairNumber(pairNumber) {
+function getColorFromPairNumber(pairNumber) {
     const minorSize = MajorColorNames.length;
     const majorSize = MinorColorNames.length;
 
@@ -20,7 +19,7 @@ const { MajorColorNames, MinorColorNames } = require( "./constants");
     return pair;
 }
 
- function getPairNumberFromColor(pair) {
+function getPairNumberFromColor(pair) {
     let majorIndex = MajorColorNames.indexOf(pair.majorColor);
     let minorIndex = MinorColorNames.indexOf(pair.minorColor);
 
@@ -31,5 +30,8 @@ const { MajorColorNames, MinorColorNames } = require( "./constants");
     return majorIndex * MinorColorNames.length + (minorIndex + 1);
 }
 
-module.exports={ getColorFromPairNumber};
-module.exports={getPairNumberFromColor};
+// Export both functions in one object
+module.exports = {
+    getColorFromPairNumber,
+    getPairNumberFromColor
+};
