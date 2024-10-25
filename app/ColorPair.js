@@ -1,4 +1,4 @@
-export default class ColorPair {
+ class ColorPair {
     constructor(majorColor = "", minorColor = "") {
         this.majorColor = majorColor;
         this.minorColor = minorColor;
@@ -8,3 +8,5 @@ export default class ColorPair {
         return `MajorColor:${this.majorColor}, MinorColor:${this.minorColor}`;
     }
 }
+
+module.exports= ColorPair;
