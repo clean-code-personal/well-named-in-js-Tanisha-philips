@@ -1,7 +1,8 @@
+const MajorColorNames = ["WHITE", "RED", "BLACK", "YELLOW", "VIOLET"];
+const MinorColorNames = ["BLUE", "ORANGE", "GREEN", "BROWN", "SLATEGRAY"];
 
- const MajorColorNames = ["WHITE", "RED", "BLACK", "YELLOW", "VIOLET"];
- const MinorColorNames = ["BLUE", "ORANGE", "GREEN", "BROWN", "SLATEGRAY"];
-
-module.exports= { MajorColorNames};
-module.exports= { MinorColorNames};
-
+// Export both arrays in one object
+module.exports = {
+    MajorColorNames,
+    MinorColorNames
+};
