@@ -1,5 +1,4 @@
-// test.js
-const { getColorFromPairNumber, getPairNumberFromColor } = require( "./colorUtils");
+const { getColorFromPairNumber, getPairNumberFromColor } = require("./colorUtils");
 const ColorPair = require("./ColorPair");
 
 function test() {
