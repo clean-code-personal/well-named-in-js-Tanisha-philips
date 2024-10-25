@@ -1,6 +1,6 @@
 // colorUtils.js
-import ColorPair from "./ColorPair";
-import { MajorColorNames, MinorColorNames } from "./constants";
+const ColorPair = require("./ColorPair");
+const { MajorColorNames, MinorColorNames } = require( "./constants");
 
 export function getColorFromPairNumber(pairNumber) {
     const minorSize = MajorColorNames.length;
