@@ -1,17 +1,21 @@
 
-
-export const MajorColorNames = [
+const components=()=>{
+ const MajorColorNames = [
     "WHITE", "RED", "BLACK", "YELLOW", "VIOLET"
 ];
-export const MinorColorNames = [
+ const MinorColorNames = [
 	"BLUE", "ORANGE", "GREEN", "BROWN", "SLATE"
 ];
 
-export function ColorPair(){
+ function ColorPair(){
            this.majorColor;
            this.minorColor;
 }
 
-export ColorPair.prototype.toString=function(){
+ ColorPair.prototype.toString=function(){
 	return `MajorColor:${this.majorColor},MinorColr:${this.minorColor}`;
 }
+
+};
+
+export default components;
