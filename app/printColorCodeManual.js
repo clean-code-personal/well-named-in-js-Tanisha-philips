@@ -10,3 +10,5 @@ function printColorCodeManual() {
         console.log(`${pairNumber.toString().padEnd(11)} | ${colorPair.majorColor.padEnd(11)} | ${colorPair.minorColor}`);
     }
 }
+
+module.exports= printColorCodeManual;
