@@ -1,6 +1,6 @@
 const { getColorFromPairNumber, getPairNumberFromColor } = require("./colorUtils");
 const ColorPair = require("./ColorPair");
-
+const printColorCode= require("./printColorCodeManual.js");
 function test() {
     let pairNumber = 4;
     let testPair1 = getColorFromPairNumber(pairNumber);
@@ -32,3 +32,4 @@ function test() {
 }
 
 test();
+printColorCode();
