@@ -30,8 +30,9 @@ function getPairNumberFromColor(pair) {
     return majorIndex * MinorColorNames.length + (minorIndex + 1);
 }
 
-// Export both functions in one object
+
 module.exports = {
     getColorFromPairNumber,
     getPairNumberFromColor
 };
+
