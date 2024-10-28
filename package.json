@@ -5,7 +5,7 @@
   "main": "testsForColorCoder.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node app/colorCoder.js"
+    "start": "node app/testsForColorCoder.js"
   },
   "repository": {
     "type": "git",
